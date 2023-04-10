@@ -34,4 +34,22 @@ RSpec.describe Shinoda do
       end
     end
   end
+
+  describe '.corporate_number' do
+    subject { described_class.corporate_number(basic_number) }
+
+    context '12桁の基礎番号の場合' do
+      describe '700110005901の時' do
+        let(:basic_number) { '700110005901' }
+
+        it { is_expected.to eq '8700110005901' }
+      end
+
+      describe '120300210231の時' do
+        let(:basic_number) { '120300210231' }
+
+        it { is_expected.to eq '6120300210231' }
+      end
+    end
+  end
 end

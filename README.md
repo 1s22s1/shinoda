@@ -18,4 +18,5 @@ gem install shinoda
 require 'shinoda'
 
 Shinoda.check_digit('700110005901') # => 8
+Shinoda.corporate_number('700110005901') # => 8700110005901
 ```

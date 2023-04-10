@@ -14,5 +14,9 @@ module Shinoda
 
       check_digit.to_s
     end
+
+    def corporate_number(basic_number)
+      check_digit(basic_number) + basic_number
+    end
   end
 end
