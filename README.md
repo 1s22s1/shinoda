@@ -15,7 +15,7 @@ gem install shinoda
 ## 使い方
 
 ```ruby
-require 'shinoda
+require 'shinoda'
 
 Shinoda.check_digit('700110005901') # => 8
 ```
