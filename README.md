@@ -1,18 +1,16 @@
-# 篠田
+# Shinoda
 
-篠田は、法人番号のチェックデジットを計算します。チェックデジットの計算方法は、国税庁の資料を参考にしています。
+Shinoda calculates the check digit of the corporate number. The check digit calculation method is based on the National Tax Agency's data.
 
-https://www.houjin-bangou.nta.go.jp/documents/checkdigit.pdf
+## How to install
 
-## インストール方法
-
-シェル上で、次のコマンドを実行します。
+Execute below command on shell.
 
 ```console
 gem install shinoda
 ```
 
-## 使い方
+## Usage
 
 ```ruby
 require 'shinoda'
