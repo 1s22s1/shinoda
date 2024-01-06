@@ -5,7 +5,7 @@ require_relative 'shinoda/version'
 module Shinoda
   class << self
     def check_digit(basic_number)
-      raise ArgumentError, '基礎番号は、１２桁の数字です。' unless basic_number.match(/\d{12}/)
+      raise ArgumentError, 'The basic number is a 12-digit numeral.' unless basic_number.match(/\d{12}/)
 
       array1, array2 = basic_number.split('').each_slice(2).to_a.transpose
 
